@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-02-15T16:31:35 IST" name="Default suite" finished-at="2020-02-15T16:32:36 IST" duration-ms="61851">
+    <groups>
+    </groups>
+    <test started-at="2020-02-15T16:31:35 IST" name="Default test" finished-at="2020-02-15T16:32:36 IST" duration-ms="61851">
+      <class name="Test.NewTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Test.NewTest@1d76aeea]" started-at="2020-02-15T16:31:35 IST" name="launchBrowser" finished-at="2020-02-15T16:31:49 IST" duration-ms="14845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="f()[pri:0, instance:Test.NewTest@1d76aeea]" started-at="2020-02-15T16:31:49 IST" name="f" finished-at="2020-02-15T16:32:09 IST" duration-ms="19418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method signature="g()[pri:0, instance:Test.NewTest@1d76aeea]" started-at="2020-02-15T16:32:09 IST" name="g" finished-at="2020-02-15T16:32:14 IST" duration-ms="5315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- g -->
+        <test-method signature="h()[pri:0, instance:Test.NewTest@1d76aeea]" started-at="2020-02-15T16:32:14 IST" name="h" finished-at="2020-02-15T16:32:22 IST" duration-ms="7495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- h -->
+        <test-method signature="i()[pri:0, instance:Test.NewTest@1d76aeea]" started-at="2020-02-15T16:32:22 IST" name="i" finished-at="2020-02-15T16:32:25 IST" duration-ms="3467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- i -->
+        <test-method signature="j()[pri:0, instance:Test.NewTest@1d76aeea]" started-at="2020-02-15T16:32:25 IST" name="j" finished-at="2020-02-15T16:32:29 IST" duration-ms="4035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- j -->
+        <test-method signature="k()[pri:0, instance:Test.NewTest@1d76aeea]" started-at="2020-02-15T16:32:29 IST" name="k" finished-at="2020-02-15T16:32:33 IST" duration-ms="3778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- k -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Test.NewTest@1d76aeea]" started-at="2020-02-15T16:32:33 IST" name="quitBrowser" finished-at="2020-02-15T16:32:36 IST" duration-ms="3378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- Test.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
