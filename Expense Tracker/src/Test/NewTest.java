@@ -29,21 +29,22 @@ public class NewTest {
  @Test
      public void f() throws Exception {
 	    String handle= driver.getWindowHandle();
-	    System.out.println("oldhandel"+handle);
+	    System.out.println("oldhandle"+handle);
 	    driver.findElement(By.xpath("/html/body/div/main/div/a")).click();
 	    Set handles=driver.getWindowHandles();
 	    for (String handle1 : driver.getWindowHandles())
 	      {
-		    System.out.println("new handel"+handle1);
+		    System.out.println("new handle"+handle1);
 		    driver.switchTo().window(handle1);
 	      }
 	    driver.findElement(By.xpath("//input[@id='identifierId']")).sendKeys("testdemoemail12@gmail.com");
 	    driver.findElement(By.xpath("//div[@id='identifierNext']")).click();
 	    Thread.sleep(3000);
-	    driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Arn987654321");
+	    driver.findElement(By.xpath("//input[@type='password']")).sendKeys("arn123456789");
 	    driver.findElement(By.xpath("//div[@id='passwordNext']")).click();
 	    Thread.sleep(6000);
 	    driver.switchTo().window(handle);
+	    System.out.println("Logged in Successfully");	
       }
  
  /* Automated test for Profile Settings (TC04)*/
@@ -57,6 +58,7 @@ public class NewTest {
         driver.findElement(By.xpath("//button[@type='submit']")).click();
         driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
         driver.findElement(By.xpath("//button[@class='circle_nav__toggle']")).click();
+	System.out.println("Profile has been successfully updated");	 
         Thread.sleep(3000);
 	 }
  
@@ -78,6 +80,7 @@ public class NewTest {
         driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
         WebElement Account=driver.findElement(By.xpath("//div[@class='flex-1 flex flex-col justify-center items-start']"));
         actions1.moveToElement(Account).click().perform();
+        System.out.println("Account Created");	 
         Thread.sleep(3000);
 	 }
 
@@ -91,6 +94,7 @@ public class NewTest {
         WebElement Category=driver.findElement(By.xpath("/html/body/div/main/div/div[2]/form/div[2]/div/div/div[3]/ul/li[1]/span"));
         actions2.moveToElement(Category).click().perform();
         driver.findElement(By.xpath("//button[@type='submit']")).click();
+	System.out.println("Added an entry");	 
 	 }
 
 /* Automated test for deleting entry (TC13)*/
@@ -102,6 +106,7 @@ public class NewTest {
         Thread.sleep(3000);
         WebElement Delete=driver.findElement(By.xpath("//button[@class='w-6 h-6 flex']"));
         actions3.moveToElement(Delete).click().perform();
+	System.out.println("Deleted the entry");	 
      }
 
 /* Automated test for Deleting Account (TC14)*/
@@ -110,6 +115,7 @@ public class NewTest {
         Actions actions4 = new Actions(driver);
         WebElement DltAcct=driver.findElement(By.xpath("//a[@class='block w-6 h-6 cursor-pointer mr-2']"));
         actions4.moveToElement(DltAcct).click().perform();
+        System.out.println("Deleted the existing Account");	 
         Thread.sleep(3000);
   }
 	 
