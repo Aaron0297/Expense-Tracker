@@ -37,7 +37,7 @@ public class NewTest {
 		    System.out.println("new handle"+handle1);
 		    driver.switchTo().window(handle1);
 	      }
-	    driver.findElement(By.xpath("//input[@id='identifierId']")).sendKeys("testdemoemail12@gmail.com");
+	    driver.findElement(By.xpath("//input[@id='identifierId']")).sendKeys("testdemoemail12@gmail.com");//Test with the existing email, dummy email has been used here
 	    driver.findElement(By.xpath("//div[@id='identifierNext']")).click();
 	    Thread.sleep(3000);
 	    driver.findElement(By.xpath("//input[@type='password']")).sendKeys("arn123456789");
